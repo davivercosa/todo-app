@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css?family=Caveat:400,700&display=swap");
+body {
+  background-color: #FFF;
+}
+
+h1 {
+  font-family: 'Caveat', cursive;
+  font-size: 60px;
+}
+
+#todo-list-wrapper {
+  -webkit-box-shadow: 0 0 100px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 100px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 0;
+}
+
+#todo-list-wrapper .checkbox-label {
+  margin-top: 20px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+#todo-list-wrapper .checkbox-label input[type='checkbox'] {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  top: 5px;
+  margin-right: 5px;
+}
+
+#groceryList {
+  list-style: none;
+  background-color: #FCFCFC;
+  padding: 0;
+  margin: 0;
+  border-bottom: 0;
+  max-height: 400px;
+  overflow-y: scroll;
+}
+
+#groceryList li {
+  padding: 20px;
+  font-size: 35px;
+  border-bottom: solid 1px #DDD;
+  font-family: 'Caveat', cursive;
+  text-shadow: 0 1px #FFF;
+  font-weight: 700;
+}
+
+#groceryList li.important {
+  background-color: #FCC;
+}
+
+#groceryList li.placeholder {
+  background-color: #FFF;
+  opacity: .4;
+}
+
+#groceryList li:last-child {
+  border-bottom: none;
+}
+
+#add-item-form {
+  background-color: #DDD;
+  padding: 20px;
+}
+
+#delete-non-important {
+  background-color: #DDD;
+  padding: 10px;
+}
+
+#delete-non-important .btn {
+  height: 60px;
+}
+
+.btn,
+.form-control {
+  height: 45px;
+  padding: 10px;
+  outline: 0;
+}
+
+#errorMessage {
+    padding: 0 10px 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #C00;
+    text-transform: uppercase;
+}
+/*# sourceMappingURL=main.css.map */

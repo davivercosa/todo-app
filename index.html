@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grocery List</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/main.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-6 offset-3">
+          <!-- the main title of the page -->
+          <h1 class="m-5 text-center" id="mainTitle">Another Grocery List</h1>
+
+          <div id="todo-list-wrapper">
+            <!-- form to add item new items -->
+            <div id="add-item-form">
+              <div class="form-row">
+                <div id="errorMessage">No Item Has been added</div>
+                <div class="col-8">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="txtItem"
+                    placeholder="Item Name"
+                  />
+                </div>
+                <div class="col">
+                  <a
+                    type="submit"
+                    href="#"
+                    class="btn btn-primary btn-block"
+                    id="btnAddItem"
+                    >Add Item</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <ul id="groceryList">
+              <li class="placeholder">Delete Me</li>
+              <li class="placeholder">Delete Me</li>
+              <li class="placeholder">Delete Me</li>
+              <li class="placeholder">Delete Me</li>
+              <li class="placeholder">Delete Me</li>
+              <li>Milk</li>
+              <li>Bread</li>
+              <li>Eggs</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
